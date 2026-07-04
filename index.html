@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    
+    <title>Weather App | Apex Planet Task 4</title>
+    
+    <meta name="description" content="A responsive Weather App built using HTML, CSS, JavaScript and OpenWeather API.">
+    
+    <meta name="keywords" content="Weather App, HTML, CSS, JavaScript, OpenWeather API">
+    
+    <meta name="author" content="Swaroop Reddy">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="container">
+    <main class="container">
 
         <h1>Weather App</h1>
 
-        <input type="text" id="city" placeholder="Enter City Name">
+    <input
+        type="text"
+        id="city"
+        placeholder="Enter City Name"
+        aria-label="Enter city name">
 
-        <button id="searchBtn">Search</button>
+        <button
+            id="searchBtn"
+            aria-label="Search weather">
+            Search
+        </button>
 
         <div id="weatherResult">
 
@@ -26,11 +42,14 @@
 
             <p id="wind"></p>
 
-            <img id="weatherIcon" alt="Weather Icon">
+            <img
+                id="weatherIcon"
+                alt="Weather Icon"
+                loading="lazy">
 
         </div>
 
-    </div>
+    </main>
 
     <script src="js/script.js"></script>
 

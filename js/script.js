@@ -38,7 +38,7 @@ async function getWeather() {
         const response = await fetch(url);
         const data = await response.json();
 
-        if (data.cod != 200) {
+        if (data.cod !== 200) {
             alert("City not found");
             return;
         }
@@ -50,7 +50,7 @@ async function getWeather() {
 
         weatherIcon.src =
             `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-
+        weatherIcon.alt = data.weather[0].description;
     } catch (error) {
 
         alert("Something went wrong!");
